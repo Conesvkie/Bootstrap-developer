@@ -1,0 +1,186 @@
+/*importing fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Source+Sans+Pro:wght@200;300;600&display=swap');
+/*custom classes*/
+:root {
+    
+    --bs-font-sans-serif: "Source Sans Pro",system-ui, -apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-serif: 'Merriweather', serif;
+    --gray-dark: #404040;
+    --light-blue:#e1f7f5;
+    --main-blue: #6c63ff;
+    --red-pink: #ff4c4c;
+    --background-carousel: #ffffffb6;
+    --light-red:rgb(243, 132, 132);
+    --color-text:var(--gray-dark);
+    --font-family-text: var(--bs-font-sans-serif);
+}
+.family-sans{
+    font-family: var(--font-family-text-serif);
+}
+
+/*body elements*/
+body{
+    font-family: var(--font-family-text);
+    color: var(--color-text);
+    font-weight: 200;
+}
+/*header / navbar*/
+.site-header{
+    background: url(./images/dev_focus.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.site-header .layout-hero{
+    min-height: 70vh;
+   
+}
+.site-header .nav-link{
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+}
+.site-header .nav-link:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    max-width: 270px;
+    left: 0px;
+    bottom: 0;
+    background-color: var(--red-pink);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-out;
+}
+
+.site-header .nav-link:hover:before{
+    visibility: visible;
+    left: 0;
+    transform: scaleX(1);
+}
+
+.site-header .animate__animated{    
+    animation-delay: 1.5s;
+}
+
+.site-header .page-section-title{
+    font-size: 3em;
+    font-family: var(--font-family-serif);
+    font-weight: 200;
+}
+.site-header .page-section-text{
+    font-size: 1.2em;
+}
+
+.page-section-header h2{
+    font-size: 3em;
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 200;
+    color: var(--red-pink);
+}
+.page-section-header p{
+    font-size: 1.2em;
+    font-weight: 200;
+}
+/*multicolumn layout*/
+.layout-multicolumn .layout-text{
+   font-family: var(--bs-font-sans-serif);
+    font-weight: 300; 
+}
+.layout-multicolumn .layout-image{
+    height: 300px;
+}
+/*carousel*/
+.carousel-inner{
+    background-color: var(--light-blue);
+}
+.carousel-inner .layout-image{
+    margin: auto;
+    width:600px;
+    height:600px;
+    
+}
+.carousel-inner .layout-title {
+    color: black;
+    background-color: var(--background-carousel);
+    width:600px;
+    margin: auto;
+}
+.carousel-inner .layout-text {
+    color: black;
+    background-color: var(--background-carousel);
+    width:600px;
+    margin: auto;
+}
+
+
+/*media page*/
+.layout-media .layout-image{
+    max-width: 200px;
+}
+.layout-media .layout-title{
+    color: var(--light-red);
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 300;
+    font-size: 1.6em;
+}
+/*nested layout*/
+
+.layout-nested .layout-title{
+    color: var(--light-red);
+    font-family: var(--bs-font-sans-serif);
+    font-size: 2.2em;
+}
+/*floater layout*/
+#page-floater{
+    background: var(--light-blue);
+}
+
+@media screen and (min-width: 768px){
+    #page-floater{
+        margin: 150px 0 150px 0;
+    }
+  
+    .layout-floater .layout-container{
+        position: relative;       
+    }
+
+      .layout-floater .layout-image{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        transform: translate(-20%, -50%) scale(1.3);       
+       
+    }
+    
+}
+/*cards*/
+.card .layout-title{
+    font-size: 3em;
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 200;
+    color: var(--red-pink);
+    
+}
+/*footer*/
+.site-footer{
+    background-color: var(--main-blue);
+}
+.layout-social .layout-icon{
+    font-size: 2em;
+}
+.site-footer .layout-text{
+    color: white;
+    font-family: var(--bs-font-sans-serif);
+}
+.site-footer .layout-title{
+    color: var(--red-pink);
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 300;
+}
+.site-footer .layout-text a{
+    color: white;
+    font-family: var(--bs-font-sans-serif);
+}
+

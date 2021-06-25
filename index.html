@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--font awsome-->
+  <script src="https://kit.fontawesome.com/b0049c094e.js" crossorigin="anonymous"></script>
+  <!--ANIMATIONS <a href="https://storyset.com/business">Business illustrations by Storyset</a>-->
+  <title>Bootstrap</title>
+</head>
+
+<body> <!--data-spy="scroll" data-target=".site-nav" data-offset="60"-->
+  <!--navigation bar-->
+  <header id="home-page" class="site-header ">
+    <nav class="site-nav family-sans text-uppercase navbar navbar-expand-xl navbar-light bg-white fixed-top">
+
+      <div class="container-fluid">
+        <!--logo-->
+        <a class="navbar-brand" href="#home-page">Becoming a developer <i class="fas fa-arrow-right"></i></a>
+
+        <!--hamburger menu-->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+          aria-controls="#mytogglerNav" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--nav menu-->
+        <section class="collapse navbar-collapse" id="myTogglerNav">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-item nav-link" href="#home-page">home</a>
+            <a class="nav-item nav-link" href="#page-multicolumn">languages</a>
+            <a class="nav-item nav-link" href="#page-carousel">field of study</a>
+            <a class="nav-item nav-link" href="#page-media">required skills</a>
+            <a class="nav-item nav-link" href="#page-nested">supplements & collaborations</a>
+            <a class="nav-item nav-link" href="#page-floater">read code</a>            
+            <a class="nav-item nav-link" href="#page-card">Projects</a>
+
+          </div>
+        </section>
+      </div>
+    </nav>
+
+    <!--header-->
+    <section class="layout-hero d-flex align-items-end text-light text-center">
+      <div class="container">
+        <div class="row ">
+          <!--justify-content-center, and change the col number-->
+          <div class="col-8 col-md-9 animate__animated animate__fadeInUp">
+            <!--when its at a md breakpoint it never gets bigger than 9 units-->
+            <h3 class="page-section-title">Some pointers</h3>
+            <p class="page-section-text">on how to become a developer:
+              </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </header>
+
+  <!--column section-->
+
+  <article id="page-multicolumn" class="page-section text-center py-5">
+
+    <header class="page-section-header container ">
+      <div class="row justify-content-center">
+        <!-- and change the col number-->
+        <div class="col-8 col-md-9">
+          <h2 class="page-section-title">Choose a language to learn</h2>
+          <p class="page-section-text">Be clear about your goals - selecting a professional path is difficult, but it is vital.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="layout-multicolumn container mt-3">
+
+      <div class="row justify-content-center family-sans">
+        <section class="mb-5 col-10 col-md-6 col-lg-5">
+          <img src="./images/javascript_logo.svg" alt="first image" class="img-fluid layout-image">
+          <h2 class="layout-title pt-3 text-uppercase">JavaScript</h2>
+          <p class="layout-text">JavaScript is an interpreted high-level programming language that adheres to the ECMAScript
+            standard. The language is
+            considered dynamic, multi-paradigm, and weakly typed. It is one of the three basic technologies of the World Wide Web,
+            along with HTML and CSS.</p>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-5">
+          <img src="./images/java-logo.png" alt="second image" class="img-fluid layout-image">
+          <h2 class="layout-title pt-3 text-uppercase">Java</h2>
+          <p class="layout-text">
+            Java's class-based, concurrent, object-oriented functionalities distinguish it as a general-purpose programming
+            language. Java, which was designed to reduce implementation dependencies, enables application developers to “write
+            once,
+            execute anywhere.” Java is one of today's most popular programming languages, particularly for client-server software
+            applications.
+          </p>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-5">
+          <img src="./images/c++_logo.svg" alt="third image" class="img-fluid layout-image">
+          <h2 class="layout-title pt-3 text-uppercase">C++</h2>
+          <p class="layout-text">
+            C# is a multi-paradigm, general-purpose programming language that supports imperative, strong typing, functional,
+            declarative, object-oriented, component-oriented, and generic programming disciplines.
+          </p>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-5">
+          <img src="./images/python_logo.png" alt="forth image" class="img-fluid layout-image">
+          <h2 class="layout-title pt-3 text-uppercase">Python</h2>
+          <p class="layout-text ">
+            Python is a general-purpose, high-level programming language that is interpreted. Python's design philosophy stresses
+            code readability through the use of considerable whitespace and straightforward programming on big and small scales.
+          </p>
+        </section>
+      </div>
+
+    </section>
+
+  </article>
+  <!--carousel compartment-->
+  <article id="page-carousel" class="page-section">
+    <section id="layout-carousel" class="carousel slide carousel-layout" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#layout-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#layout-carousel" data-slide-to="1"></li>
+        <li data-target="#layout-carousel" data-slide-to="2"></li>
+        <li data-target="#layout-carousel" data-slide-to="3"></li>
+
+      </ol>
+
+      <div class="carousel-inner">
+        
+        <section class="carousel-item active">
+          <img src="./images/web_developer.svg" alt="carousel image 1" class="img-fluid d-block layout-image" >
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="layout-title">Web Developer</h2>
+            <p class="layout-text">Web developers create and design web pages. They build the back-end of a website and design its front-end appearance.
+            </p>
+          </div>
+        </section>
+
+        <section class="carousel-item">
+          <img src="./images/computer_programmer.svg" alt="carousel image 2" class="img-fluid d-block layout-image" >
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="layout-title">Computer Programmer</h2>
+            <p class="layout-text">
+              Computer programmers create computer programs by creating code in a variety of programming languages. They run new
+              programs through their paces and look for problems.
+            </p>
+          </div>
+        </section>
+
+        <section class="carousel-item">
+          <img src="./images/database_admin.svg" alt="carousel image 3" class="img-fluid d-block layout-image" >
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="layout-title">Database Administrator</h2>
+            <p class="layout-text">
+              These computer specialists store and arrange data for a variety of businesses. They back up data, protect it, and
+              control user permissions.
+            </p>
+          </div>
+        </section>
+
+        <section class="carousel-item">
+          <img src="./images/software_developer.svg" alt="carousel image 4" class="img-fluid d-block layout-image" >
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="layout-title">Software Developer</h2>
+            <p class="layout-text">
+              Computer systems or applications are designed by software developers. They may direct computer programmers or develop
+              their own code.
+            </p>
+          </div>
+        </section>
+
+        <a href="#layout-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon">
+            <!--for screen read use only-->
+            <span class="sr-only">Previous</span>
+          </span>
+        </a>
+
+        <a href="#layout-carousel" class="carousel-control-next" role="button" data-slide="next">
+          <span class="carousel-control-next-icon">
+            <!--for screen read use only-->
+            <span class="sr-only">Next</span>
+          </span>
+        </a>
+      
+      </div>
+
+    </section>
+
+  </article>
+
+  <!--Skills required - media component-->
+
+  <article id="page-media" class="page-section py-5">
+    <header class="page-section-header container text-center">
+      <h2 class="page-section-title">
+        Aside from computer programming, what other skills are required?
+      </h2>
+      <p class="page-section-text">
+        There are four main skills that are required:
+      </p>
+    </header>
+
+    <section class="layout-media container my-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <section class="media">
+            <img src="./images/FAQs.gif" alt="Media image 01" class="layout-image">
+            <div class="media-body">
+              <h4 class="layout-title">Communication:</h4>
+              <p class="layout-text">
+                To accomplish their work successfully, developers must communicate effectively with clients,
+                colleagues,
+                supervisors,
+                and personnel in non-technical areas.
+              </p>
+            </div>
+
+          </section>
+
+          <section class="media">
+
+            <div class="media-body">
+              <h4 class="layout-title">Teamwork:</h4>
+              <p class="layout-text">
+                To plan, create, and build projects, software engineers frequently collaborate in groups. They must
+                work well with
+                others, provide and receive constructive feedback, and attend meetings.
+              </p>
+            </div>
+            <img src="./images/Team work.gif" alt="Media image 02" class="layout-image">
+
+          </section>
+
+          <section class="media">
+            <img src="./images/Problem solving.gif" alt="Media image 03" class="layout-image">
+            <div class="media-body">
+              <h4 class="layout-title">Problem-Solving:</h4>
+              <p class="layout-text">
+                A software developer's tasks include resolving issues discovered by computer programmers or
+                consumers. To guarantee
+                that
+                a software runs properly, they must have excellent problem-solving skills.
+              </p>
+            </div>
+
+
+          </section>
+
+          <section class="media">
+
+            <div class="media-body">
+              <h4 class="layout-title">Attention to Detail:</h4>
+              <p class="layout-text">
+                The finest software engineers have a keen sense of detail that allows them to see and trace minor
+                flaws in code.
+                They
+                must also be able to change their focus from the large picture to the finer points of a situation.
+              </p>
+            </div>
+            <img src="./images/Curious.gif" alt="Media image 04" class="layout-image">
+
+
+          </section>
+        </div>
+      </div>
+
+
+
+    </section>
+  </article>
+
+  <!--nested layout - studying and connections-->
+
+  <article id="page-nested" class="page-section">
+  
+    <div class="layout-nested container py-5">
+
+      <div class="row justify-content-center">
+  
+        <section class="col-sm-10 col-md-5 col-lg-12 text-center text-lg-left">
+          <div class="row align-items-center justify-content-center">
+            <!--the columns inside the row should add up to 12-->
+            <section class="col-lg-3 ">
+              <img src="images/connections.svg" alt="nested image 01" class="img-fluid layout-image">
+            </section>
+  
+            <section class="col-lg-9">
+              <h2 class="layout-title">Join a community and collaborate</h2>
+              <p class="layout-text">
+                You'll need to discover a learning community that can help you succeed as a software developer. As a
+                result, having a
+                network of like-minded people around you provides an immediate support system. A real-world software
+                engineering
+                community can advise you on where to concentrate your studies.
+              </p>
+            </section>
+          </div>
+        </section>
+  
+        <section class="col-sm-10 col-md-5 col-lg-12 text-center text-lg-left">
+          <div class="row align-items-center justify-content-center">
+            <section class="col-lg-3 ">
+              <img src="images/studying.svg" alt="nested image 02" class="img-fluid layout-image">
+            </section>
+  
+            <section class="col-lg-9">
+              <h2 class="layout-title">Supplement your studies</h2>
+              <p class="layout-text">
+                Educational books are usually out of date. Reference books are updated at a considerably slower pace than
+                software. All
+                education establishments give theoretical notions and ways of thinking that might be beneficial to your
+                achievement.
+                Sites that have useful resources are StackOverflow, Udemy, FreeCodeCamp, LinkedIn Learning, Coursera and
+                so much more.
+              </p>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+  </article>
+  <!--floater - look at experts code-->
+  <article id="page-floater" class="page-section">
+    
+    <section class="layout-floater container py-5">
+      <div class="row align-items-center justify-content-center">
+
+      <section class="layout-container col-8 col-md-4">
+        <img src="images/look_Code.svg" alt="floater image" class="layout-image img-fluid">
+      </section>
+  
+      <section class="col-10 col-md-6 text-center text-md-left pl-md-5">
+        <h2 class="layout-title">Read code written by experts</h2>
+        <p class="layout-text">
+          Learning how to understand other people's code is another useful part of being a software engineer. You may
+          simply
+          accomplish this by visiting sites such as GitHub repositories and reading documentation.
+        </p>
+      </section>
+
+      </div>
+    </section>
+  </article>
+
+  <!--card - projects-->
+  <article id="page-card" class="page-section">
+  
+    <section class="layout-card container">
+      <!--in case for adding other cards-->
+      <div class="row justify-content-center text-center">
+        <div class="col-8 col-sm-12 col-lg-6">
+
+          <div class="card-deck">
+          <section class="card my-3">
+            <img src="images/project.gif" alt="card 01" class="layout-image card-img-top img-fluid">
+            <div class="card-body">
+            <h4 class="layout-title card-title">Build projects</h4>
+            <p class="layout-text card-text">
+              Nothing beats hands-on experience. You should start building projects in a language that you are familiar
+              with. This not
+              only improves your learning but also leads to the discovery of a future employment. As you learn to code,
+              develop
+              projects, and so on, you should gradually be able to expand your professional network.
+            </p>
+            </div>
+          </section>
+
+          </div>  
+        </div>
+      </div>
+    </section>
+  
+  </article>
+
+  <!--footer-->
+  <footer class="site-footer ">
+
+    <div class="container-fluid justify-content-center">
+      <div class="row">
+
+        <div class="col-12 col-md-4 text-center">
+          <section class="layout-social py-5 px-3">
+            <h5 class="layout-title">Social media</h5>
+            
+            <a class="text-light px-2" href="https://www.facebook.com/conevskie/">
+              <i class="layout-icon fab fa-facebook-square"></i>
+            </a>
+            <a class="text-light px-2" href="https://www.linkedin.com/in/eva-conevski-b212111a0/">
+              <i class="layout-icon fab fa-linkedin"></i>
+            </a>
+            <a class="text-light px-2" href="https://github.com/Conesvkie">
+              <i class="layout-icon fab fa-github-square"></i>
+            </a>
+            <a class="text-light px-2" href="https://www.instagram.com/evaconevski/">
+              <i class="layout-icon fab fa-instagram"></i>
+            </a>
+            <p class="layout-text"> If you wish to contact me, please use the following social media connections. </p>
+        </div>
+
+        <div class="col-12 col-md-4 py-5 px-3 text-center">
+          <h5 class="layout-title">Illustrations</h5>
+          <p class="layout-text">
+            <a href="https://storyset.com/business">Business illustrations by Storyset</a>            
+          </p>
+          <p class="layout-text">
+            <a href="https://undraw.co/">Illustrations by unDraw</a>
+          </p>
+        </div>
+        <div class="col-12 col-md-4 py-5 px-3 text-center">
+          <h5 class="layout-title">Copyright</h5>
+          <p class="layout-text">
+            © 2021 Copyright: Becoming a developer
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+    </section>  
+  
+  </footer>
+
+
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
